@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TejidosPulido</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div id="header_uspBar">
+        <div>
+            <a href="#" title="Encuentra respuestas a preguntas frequentes o contáctenos.">Ayuda y contacto</a>
+            <a href="#" title="Las devoluciones són siempre gratiuitas. Los envíos son gratiuitos en pedidos a partir de 60€, para compras inferiores el coste del envío mínimo es de 4,95€.">Envíos y devoluciones gratiuitas</a>
+            <a href="#" title="Al recibir tus productos dispones de 100 días para realizar una devolución.">Derecho de devolución de 100 días</a>
+        </div>
+      </div>
+      <div id="navbar_container">
+          <div id="navbar_topRow">
+              <div></div>
+              <a href="#">
+                  <img id="logo_image" src="./src/logo/logo.svg" />
+              </a>
+              <div class="navTools">
+                  <div class="navTools-dropDown">
+                      <a title="Mi cuenta" href="#">
+                          <img alt="Mi cuenta" src="./src/icons/user.svg" />
+                      </a>
+                      <div id="navbar_userAccount_container"> 
+                          <ul>
+                              <li>
+                                  <a class="navbar-link" href="#">Mi perfil</a>
+                              </li>
+                              <li>
+                                  <a class="navbar-link" href="#">Mis pedidos</a>
+                              </li>
+                              <li>
+                                  <a class="navbar-link" href="#">Ayuda y contacto</a>
+                              </li>
+                          </ul>
+                          <div id="navbar_userAccountLogOut">
+                              <a class="navbar-link" href="#">¿No eres Emili Bellot? <b>Desconectar</b></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                      <a title="Mis favoritos" href="#">
+                          <span class="navToolCounter">6</span>
+                          <img alt="Mis favoritos" src="./src/icons/heart.svg" />
+                      </a>
+                  </div>
+                  <div class="navTools-dropDown">
+                      <a title="Mi carrito" href="#">
+                          <img alt="Mi carrito" src="./src/icons/bag.svg" />
+                      </a>
+                      <div id="navbar_userCart_container"> 
+                          <div>
+                              <span>Tu cesta</span>
+                              <p>Llena tu cesta de nuevas tendencias</p>
+                          </div>
+                          <div>
+                              <span>¿Necesitas inspitación?</span>
+                              <button class="z-button z-button-1">
+                                  <span>Ver novedades</span>
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div id="navbar_bottomRow">
+              <button id="navbar_button" class="z-button" type="button">
+                  <img src="./src/icons/navbar.svg" />
+              </button>
+              <div>
+                  <nav id="navbar_category_container">
+                      <ul id="navbar_category_list"></ul>
+
+                      <div id="navbar_categoryOverlayConatainer" class="navbar_categoryOverlayConatainer">
+                          <div id="navbar_subCategoryContainer">
+                              <div>
+                                  <div>
+                                      <div>
+                                          <div id="navbar_subMenu_container"> 
+                                              <ul id="navbar_subcategory_list"></ul>
+                                          </div>
+                                      </div>
+                                      <div>
+                                          <div id="navbar_subMenuImage_container">
+                                              <a href="#">
+                                                  <div id="navbar_subMenuImage"></div>
+                                              </a>
+                                              <div>
+                                                  <a href="#">
+                                                      <span class="navbar-link">
+                                                          Descubre la colección
+                                                          <img src="./src/icons/rightrow.svg" alt="Descubre la colección">
+                                                      </span>
+                                                  </a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </nav>
+              </div>
+              <div id="navbar_search_container">
+                  <form action="">
+                      <button class="z-button" type="submit">
+                          <img src="./src/icons/search.svg" />
+                      </button>
+                      <div>
+                          <input type="search" name="navbar_search" id="navbar_search" placeholder="Busca aquí" aria-label="Busca aquí" />
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div id="navbar_sidePanel_container">
+          <div id="navbar_sidePanelHead">
+              <div></div>
+              <span>Explorar por categoría</span>
+              <button id="close_navbar_button" class="z-button" type="button">
+                  <img src="./src/icons/close.svg" alt="Cerrar menu"/>
+              </button>
+          </div>
+          <div id="navbar_sidePanelCategoryMenu">
+              <nav>
+                  <ul id="navbar_sidePanelCategoryMenu_list">
+                      <li class="navbar_sidePanelCategoryMenu_element">
+                          <a href="#">
+                              <div class="navbar_sidePanelCategoryMenu_linkImage">
+                                  <div style="background-image: url(./src/images/categories/infantiles.jpeg);"></div>
+                              </div>
+                              <div class="navbar_sidePanelCategoryMenu_linkText">
+                                  <span>Infantiles</span>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="navbar_sidePanelCategoryMenu_element">
+                          <a href="#">
+                              <div class="navbar_sidePanelCategoryMenu_linkImage">
+                                  <div style="background-image: url(./src/images/categories/patchwork.jpeg);"></div>
+                              </div>
+                              <div class="navbar_sidePanelCategoryMenu_linkText">
+                                  <span>Patchwork</span>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="navbar_sidePanelCategoryMenu_element">
+                          <a href="#">
+                              <div class="navbar_sidePanelCategoryMenu_linkImage">
+                                  <div style="background-image: url(./src/images/categories/basicos.jpeg);"></div>
+                              </div>
+                              <div class="navbar_sidePanelCategoryMenu_linkText">
+                                  <span>Básicos</span>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="navbar_sidePanelCategoryMenu_element">
+                          <a href="#">
+                              <div class="navbar_sidePanelCategoryMenu_linkImage">
+                                  <div style="background-image: url(./src/images/categories/carnaval.jpeg);"></div>
+                              </div>
+                              <div class="navbar_sidePanelCategoryMenu_linkText">
+                                  <span>Carnaval</span>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="navbar_sidePanelCategoryMenu_element">
+                          <a href="#">
+                              <div class="navbar_sidePanelCategoryMenu_linkImage">
+                                  <div style="background-image: url(./src/images/categories/moda.jpeg);"></div>
+                              </div>
+                              <div class="navbar_sidePanelCategoryMenu_linkText">
+                                  <span>Moda</span>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="navbar_sidePanelCategoryMenu_element">
+                          <a href="#">
+                              <div class="navbar_sidePanelCategoryMenu_linkImage">
+                                  <div style="background-image: url(./src/images/categories/hogar.jpeg);"></div>
+                              </div>
+                              <div class="navbar_sidePanelCategoryMenu_linkText">
+                                  <span>Hogar</span>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="navbar_sidePanelCategoryMenu_element">
+                          <a href="#">
+                              <div class="navbar_sidePanelCategoryMenu_linkImage">
+                                  <div style="background-image: url(./src/images/categories/complementos.jpeg);"></div>
+                              </div>
+                              <div class="navbar_sidePanelCategoryMenu_linkText">
+                                  <span>Complementos</span>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="navbar_sidePanelCategoryMenu_element">
+                          <a href="#">
+                              <div class="navbar_sidePanelCategoryMenu_linkImage">
+                                  <div style="background-image: url(./src/images/categories/ofertas.jpeg);"></div>
+                              </div>
+                              <div class="navbar_sidePanelCategoryMenu_linkText" >
+                                  <span type="sales">Ofertas</span>
+                              </div>
+                          </a>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
+          <div class="navbar_sidePanelCategoryContainer">
+              <ul>
+                  <li>
+                      <a href="#">
+                          <span>Ayuda</span>
+                          <div>
+                              <img src="./src/icons/chevronright.svg" alt="Ir a Ayuda">
+                          </div>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <span>Newsletter</span>
+                          <div>
+                              <img src="./src/icons/chevronright.svg" alt="Ir a Ayuda">
+                          </div>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <div class="navbar_sidePanelCategoryContainer">
+              <ul>
+                  <li>
+                      <a href="#">
+                          <span>Cerrar sesión</span>
+                          <div>
+                              <img src="./src/icons/chevronright.svg" alt="Ir a Ayuda">
+                          </div>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </header>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
